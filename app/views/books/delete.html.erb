@@ -1,0 +1,12 @@
+<h1> Delete </h1>
+
+
+
+<%= form_for(@book, method: :delete) do |f| %> 
+<p> are you sure to delete </p>
+<p> <%= @book.title %></p>
+
+<div class="button"> 
+    <%= f.submit("Delete book") %>
+</div>
+<% end %>
